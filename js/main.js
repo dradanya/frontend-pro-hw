@@ -1,3 +1,11 @@
-let name = prompt("Hello!, what is your name?")
+let number = +prompt("Enter digits here");
 
-alert("Hello " + name + "!" + "How are you?")
+let number1 = +prompt("Enter digits here");
+
+let number2 = +prompt("Enter digits here");
+
+let result = number + number1 + number2;
+
+result = result / 3;
+
+alert(result);
