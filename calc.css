@@ -1,0 +1,444 @@
+body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background: linear-gradient(90deg, rgba(162,160,160,1) 22%, rgba(255,255,255,1) 77%);
+} 
+
+.calculator{
+    height:600px;
+    width:400px;
+    background-color: rgb(65, 65, 65);
+    border-radius:15px;
+    box-shadow:10px 10px 12px rgba(0, 0, 0, 0.5) ;
+}
+
+.calcfield{
+    position:relative;
+    height:50px;
+    width:92%;
+    background:white;
+    top:50px;
+    border-radius:12px;
+    left:15px;
+    font-size:45px;
+}
+
+.digits{
+    height:73%;
+    width:27%;
+    margin-left:68%;
+    margin-top:85px;
+    display:inline-block;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.clearbutton{
+    position:relative;
+    background-color: rgb(206, 20, 20);
+    display:inline-block;
+    height:70px;
+    width:58%;
+    vertical-align: top;
+    top:-437px;
+    left:17px;
+    border-radius:7px;
+    cursor:pointer;
+}
+
+.span_1{
+    position:relative;
+    font-size:30px;
+    font-family:arial;
+    left:32%;
+    top:24%;
+}
+
+.plus{
+    height:75px;
+    width:100%;
+    background-color: white;
+    border-radius:20px;
+    background-color: rgb(209, 209, 8);
+    cursor: pointer;
+}
+
+.minus{
+    height:75px;
+    width:100%;
+    background-color: white;
+    border-radius:20px;
+    background-color: rgb(209, 209, 8);
+    cursor: pointer;
+}
+
+.divide{
+    height:75px;
+    width:100%;
+    background-color: white;
+    border-radius:20px;
+    background-color: rgb(209, 209, 8);
+    cursor: pointer;
+
+}
+
+.multiply{
+    height:75px;
+    width:100%;
+    background-color: white;
+    border-radius:20px;
+    background-color: rgb(209, 209, 8);
+    cursor: pointer;
+}
+
+.equels{
+    height:75px;
+    width:100%;
+    background-color: white;
+    border-radius:20px;
+    background-color: rgb(19, 176, 207);
+    cursor: pointer;
+}
+
+.span_2{
+    position:relative;
+    font-size:30px;
+    font-family:arial;
+    left:40%;
+    top:32%;
+}
+
+.span_3{
+    position:relative;
+    font-size:45px;
+    font-family:arial;
+    left:42%;
+    top:14%;
+}
+
+.span_4{
+    position:relative;
+    font-size:30px;
+    font-family:arial;
+    left:45%;
+    top:32%;
+}
+
+.span_5{
+    position:relative;
+    font-size:40px;
+    font-family:arial;
+    left:43%;
+    top:34.5%;
+}
+
+.span_6{
+    position:relative;
+    font-size:30px;
+    font-family:arial;
+    left:42%;
+    top:32%;
+}
+
+.digits_1-9{
+    height:42.5%;
+    width:56%;
+    position:relative;
+    top:-405px;
+    left:20px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.digit_0{
+    height:75px;
+    width:56.5%;
+    position:relative;
+    top:-400px;
+    left:20px;
+    border-radius:7px;
+    background-color: rgb(209, 209, 8);
+    cursor:pointer;
+}
+
+.digit_01{
+    position:relative;
+    font-size:50px;
+    font-family:arial;
+    left:45%;
+    top:15%;
+}
+
+.digit_1{
+    height:55px;
+    width:30%;
+    background:rgb(255, 254, 254);
+    border-radius:7px;
+    cursor:pointer;
+    box-shadow: 3px 3px 4px rgb(0,0,0,0.5) ;
+}
+
+.digit_2{
+    height:55px;
+    width:30%;
+    background:rgb(255, 254, 254);
+    border-radius:7px;
+    cursor:pointer;
+    box-shadow: 3px 3px 4px rgb(0,0,0,0.5) ;
+}
+
+.digit_3{
+    height:55px;
+    width:30%;
+    background:rgb(255, 254, 254);
+    border-radius:7px;
+    cursor:pointer;
+    box-shadow: 3px 3px 4px rgb(0,0,0,0.5) ;
+}
+
+.digit_4{
+    height:55px;
+    width:30%;
+    background:rgb(255, 254, 254);
+    border-radius:7px;
+    cursor:pointer; 
+    box-shadow: 3px 3px 4px rgb(0,0,0,0.5) ;
+}
+
+.digit_5{
+    height:55px;
+    width:30%;
+    background:rgb(255, 254, 254);
+    border-radius:7px;
+    cursor:pointer; 
+    box-shadow: 3px 3px 4px rgb(0,0,0,0.5) ;
+}
+
+.digit_6{
+    height:55px;
+    width:30%;
+    background:rgb(255, 254, 254);
+    border-radius:7px;
+    cursor:pointer;
+    box-shadow: 3px 3px 4px rgb(0,0,0,0.5) ; 
+}
+
+.digit_7{
+    height:55px;
+    width:30%;
+    background:rgb(255, 254, 254);
+    border-radius:7px;
+    cursor:pointer; 
+    box-shadow: 3px 3px 4px rgb(0,0,0,0.5) ;
+}
+
+.digit_8{
+    height:55px;
+    width:30%;
+    background:rgb(255, 254, 254);
+    border-radius:7px;
+    cursor:pointer; 
+    box-shadow: 3px 3px 4px rgb(0,0,0,0.5) ;
+}
+
+.digit_9{
+    height:55px;
+    width:30%;
+    background:rgb(255, 254, 254);
+    border-radius:7px; 
+    cursor:pointer;
+    box-shadow: 3px 3px 4px rgb(0,0,0,0.5);
+}
+
+.digit_11{
+    position: relative;
+    font-size:25px;
+    left:40%;
+    top:22%;
+    color:rgb(0, 0, 0);
+}
+
+.digit_22{
+    position: relative;
+    font-size:25px;
+    left:40%;
+    top:22%;
+    color:rgb(0, 0, 0);
+}
+
+.digit_33{
+    position: relative;
+    font-size:25px;
+    left:40%;
+    top:22%;
+    color:rgb(0, 0, 0);
+}
+
+.digit_44{
+    position: relative;
+    font-size:25px;
+    left:40%;
+    top:22%;
+    color:rgb(0, 0, 0);
+}
+
+.digit_55{
+    position: relative;
+    font-size:25px;
+    left:40%;
+    top:22%;
+    color:rgb(0, 0, 0);
+}
+
+.digit_66{
+    position: relative;
+    font-size:25px;
+    left:40%;
+    top:22%;
+    color:rgb(0, 0, 0);
+}
+
+.digit_77{
+    position: relative;
+    font-size:25px;
+    left:40%;
+    top:22%;
+    color:rgb(0, 0, 0);
+}
+
+.digit_88{
+    position: relative;
+    font-size:25px;
+    left:40%;
+    top:22%;
+    color:rgb(0, 0, 0);
+}
+
+.digit_99{
+    position: relative;
+    font-size:25px;
+    left:40%;
+    top:22%;
+    color:rgb(0, 0, 0);
+}
+
+.digit_1:hover{
+    opacity:0.9;
+}
+
+.digit_2:hover{
+    opacity:0.9;
+}
+
+.digit_3:hover{
+    opacity:0.9;
+}
+
+.digit_4:hover{
+    opacity:0.9;
+}
+
+.digit_5:hover{
+    opacity:0.9;
+}
+
+.digit_6:hover{
+    opacity:0.9;
+}
+
+.digit_7:hover{
+    opacity:0.9;
+}
+
+.digit_8:hover{
+    opacity:0.9;
+}
+
+.digit_9:hover{
+    opacity:0.9;
+}
+
+.clearbutton:hover{
+    opacity:0.9;
+}
+
+.digit_0:hover{
+    opacity:0.9;
+}
+
+.plus:hover{
+    opacity:0.9;
+}
+
+.minus:hover{
+    opacity:0.9;
+}
+
+.divide:hover{
+    opacity:0.9;
+}
+
+.multiply:hover{
+    opacity:0.9;
+}
+
+.equels:hover{
+    opacity:0.9;
+}
+
+.digit_1:active{
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) ;
+}
+
+.digit_2:active{
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) ;
+}
+
+.digit_3:active{
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) ;
+}
+
+.digit_4:active{
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) ;
+}
+
+.digit_5:active{
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) ;
+}
+
+.digit_6:active{
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) ;
+}
+
+.digit_7:active{
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) ;
+}
+
+.digit_8:active{
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) ;
+}
+
+.digit_9:active{
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) ;
+}
+
+.valeratop{
+    height:590px;
+    width:143px;
+    background-color: rgb(67, 65, 65);
+    margin-right:20px;
+    border-radius:10px;
+    color:white;
+    font-size:25px;
+    padding-left:70px;
+    padding-top:10px;
+    font-family:arial;
+    box-shadow:10px 10px 12px rgba(0, 0, 0, 0.5) ;
+}
+
