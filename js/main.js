@@ -1,30 +1,107 @@
-// let numOrStr = prompt('input number or string');
-// console.log(numOrStr)
+// 1 Вивести на сторінку в один рядок через кому числа від 10 до 20.
 
-// if(numOrStr === null) {
-// console.log('ви скасували')
-// } else if( numOrStr.trim() === '' ) {
-// console.log('Empty String');
-// } else if ( isNaN( +numOrStr ) ) {
-// console.log(' number is Ba_NaN')
-// } else {
-// console.log('OK!')
+// let i = 10;
+// while (i <= 20){
+//     console.log(i);
+//     i++;
 // }
 
 
-let numOrStr = prompt('input number or string');
-console.log(numOrStr);
+// // 2 Вивести квадрати чисел від 10 до 20.
 
-switch(true) {
-    case (numOrStr === null) :
-        console.log('You denied');
-        break;
-    case ( numOrStr.trim() === '') :
-        console.log('Empty String');
-        break;
-    case ( isNaN( +numOrStr ) ) :
-        console.log('number is Ba_Nan');
-        break;
-    default :
-    console.log('OK');
-}
+// for(let i = 10; i <= 20;i++){
+//     console.log('square of number ' + i + ' = ' + (i*i));
+// }
+
+
+// 3 Вивести таблицю множення на 7.
+
+// for(let number1 = 1; number1 <= 7;number1++){
+//     for(let number2 = 1; number2 <= 7;number2++){
+//         console.log(+number1 + "*" + number2 + "=" + (number1*number2));
+//     }
+// }
+
+
+// 4 Знайти суму всіх цілих чисел від 1 до 15.
+
+
+// let sum = 0;
+
+// for(let i = 0; i <= 15;i++){
+//     sum += i;
+// }
+
+// console.log(sum);
+
+
+// 5 Знайти добуток усіх цілих чисел від 15 до 35.
+
+// let mult = 1;
+
+// for(let i = 15; i <= 35;i++){
+//     mult = mult * i;
+// }
+
+// console.log(mult);
+
+
+// 6 Знайти середнє арифметичне всіх цілих чисел від 1 до 500.
+
+// let sum = 0;
+
+// for(let i = 1; i <=500;i++){
+//     sum += i;
+// }
+
+// console.log(sum / 500);
+
+
+// 7 Вивести суму лише парних чисел в діапазоні від 30 до 80.
+
+// let sum = 0;
+// let number = 2;
+
+// for(let i = 30; i <=80;i++){
+//     if(i % number === 0){
+//         sum += i;
+//     }
+// }
+
+// console.log(sum);
+
+
+// 8 Вивести всі числа в діапазоні від 100 до 200 кратні 3.
+
+// let number = 3;
+
+// for(let i = 100; i < 200;i++){
+//     if( i % number === 0){
+//         console.log(i)
+//     }
+// }
+
+
+// 9-10-11 Дано натуральне число. Знайти та вивести на сторінку всі його дільники.
+
+// let x = 100;
+// let counter = 0;
+// let sum = 0;
+
+// for(let i = 1; i <= x;i++){
+//     if(x % i === 0){
+//        if(i % 2 === 0)
+//        sum += i;
+//     }
+// }
+
+// console.log(sum);
+
+
+// 12 
+
+// for(let number1 = 1; number1 <= 10;number1++){
+//     for(let number2 = 1; number2 <=10;number2++){
+//         console.log(+number1 + "*" + number2 + "=" + (number1*number2)); 
+//     }
+// }
