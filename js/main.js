@@ -84,43 +84,41 @@
 
 // 9 Дано натуральне число. Знайти та вивести на сторінку всі його дільники.
 
-// let x = 100;
-// let counter = 0;
-// let sum = 0;
-// let arr = [];
+let x = 100;
+let counter = 0;
+let sum = 0;
+let arr = [];
 
-// for(let i = 1; i <= x;i++){
-//     if(x % i === 0){
-//         arr.push(i);
-//     }
-// }
+for(let i = 1; i <= x;i++){
+    if(x % i === 0){
+        arr.push(i);
+    }
+}
 
-// console.log( 'all its divisors - ' + arr);
+console.log( 'all its divisors - ' + arr);
 
 // 10 Визначити кількість його парних дільників.
 
-// for(let i = 1; i <= x;i++){
-//     if(x % i === 0){
-//     if(i % 2 === 0){
-//         counter++;
-//       arr.push(i);
-//     }}
-// }
+arr = [];
 
-// console.log('pair divisors - ' + counter++);
+for(let i = 1; i <= x;i++){
+    if(x % i === 0){
+    if(i % 2 === 0){
+        counter++;
+      arr.push(i);
+    }}
+}
+
+console.log('pair divisors - ' + counter++);
 
 
 // 11 Знайти суму його парних дільників.
 
-// for(let i = 1; i <= arr.length;i++){
-//     if(x % i === 0){
-//     if(i % 2 === 0){
-//             sum += i;
-//         }
-//     }
-// }
-
-// console.log('sum of its pair divisors - ' + sum);
+for(let i = 0; i < arr.length;i++){
+     sum += arr[i]; 
+        }
+ 
+console.log('sum of its pair divisors - ' + sum);
 
 
 // 12 
