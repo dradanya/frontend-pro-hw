@@ -1,13 +1,25 @@
-const hr = +prompt('Enter the required number of hours to convert per second: ');
-const sec = hr * 3600
-	
-	if (Number.isNaN (hr)){
-		alert ('Error: You entered an additional character. Try entering only a number. Example : 5');
-		}
-	else if (!Number.isNaN (hr)) {
-		alert ('Translation result in seconds: ' + sec);
-	}
+// const array = [1,2,3,4,5,6,7];
 
-    else{
-        alert('Error: You did not enter anything');
-    }
+// const removeElement = (array,item) => {
+//     let newArray = [...array]
+//     const index = newArray.findIndex((element) => element === item)
+//     if(index !== -1){
+//         newArray.splice(index,1)
+//         return newArray
+//     }
+// }
+
+// console.log(removeElement(array,5));
+// console.log(array);
+
+
+
+// OR
+
+
+
+// const array = [1,2,3,4,5,6,7];
+
+// const removeItem = array.filter((item) => item !== 5);
+
+// console.log(removeItem);
