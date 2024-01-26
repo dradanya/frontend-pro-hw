@@ -9,5 +9,5 @@ const sec = hr * 3600
 	}
 
     else{
-        alert('Error: Нou did not enter anything');
+        alert('Error: You did not enter anything');
     }
