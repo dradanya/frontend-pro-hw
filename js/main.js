@@ -1,15 +1,10 @@
-const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
+function degreeFunction(num,degree){
 
-function generateKey(length,characters) {
-    let result = '';
+    if(degree === 0)
+    return 1;
 
-    for(let i = 0; i < length;i++){
-        let num = Math.floor(Math.random() * characters.length);
-        result += characters.substring(num,num + 1);
-    }
-    return result;
+    else 
+    return num * degreeFunction(num,degree - 1);
 }
 
-const key = generateKey(10,characters);
-
-console.log(key);
+console.log(degreeFunction(7,7));
