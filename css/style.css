@@ -1,0 +1,26 @@
+.img {
+    display: block;
+    width: 800px;
+    height: 600px;
+    object-fit: cover;
+    margin: 0px auto;
+}
+
+.btn {
+    width: 200px;
+    height: 30px;
+    display: block;
+    margin: 5px auto;
+    cursor: pointer;
+    border: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:15px;
+    background-color: rgb(11, 83, 190);
+    transition:300ms ease-in-out;
+    color:white;
+}
+
+.btn:hover{
+    background-color: black;
+    color:white;
+}
