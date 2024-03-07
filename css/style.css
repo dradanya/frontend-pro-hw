@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color:rgb(178, 212, 242);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category_side {
+    width: 16%;
+    height: 65%;
+    background-color: whitesmoke;
+}
+
+.ctstyle{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;;
+    width:100%;
+    height: 25%;
+    background-color: rgb(54, 126, 190);
+}
+
+.ctstyle:hover {
+    background-color: rgb(22, 92, 153);
+}
+
+.ctstyle:active {
+    background-color: rgb(54, 126, 190);
+}
+
+.products_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 65%;
+    background-color: whitesmoke;
+}
+
+.prstyle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width:100%;
+    height: 24.7%;
+    background-color: rgb(54, 126, 190);
+}
+
+.prstyle:hover {
+    background-color: rgb(22, 92, 153);
+}
+
+.prstyle:active {
+    background-color: rgb(54, 126, 190);
+}
+
+.information_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 20%;
+    height: 65%;
+    background-color: whitesmoke;
+}
+
+.buyButton {
+    cursor: pointer;
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: rgb(43, 136, 219);
+    border:none;
+}
+
+.buyButton:hover {
+    background-color: rgb(26, 107, 177);
+}
+
+.buyButton:active {
+    background-color: rgb(43, 136, 219);
+}
