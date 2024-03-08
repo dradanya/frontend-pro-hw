@@ -47,6 +47,7 @@ function showProducts(category) {
     });
 }
 
+
 // Function to show product information
 function showProductInfo(product) {
     const informationBlock = document.getElementById('information_block');
