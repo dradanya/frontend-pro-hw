@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 2 HW</title>
+    <title>HW 26</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+
+    <div class="container">
+        <div class="search_block">
+            <div class="search">
+                <span class="search_text">Search post by ID: </span>
+                <input id="postIdInput" class="input" type="number" min="1" max="100" placeholder="Enter post ID">
+                <button class="button" id="searchBtn">Search</button>
+            </div>
+        </div>
+        <div class="userInfo" id="postContainer">
+            <!-- Post will be displayed here -->
+        </div>
+    </div>
+
     <script src="./js/main.js"></script>
 </body>
 </html>
