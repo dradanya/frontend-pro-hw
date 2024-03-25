@@ -1,0 +1,210 @@
+* {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    background-color: beige;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  header {
+    display: flex;
+    width: 100%;
+    height: 40%;
+  }
+  
+  .category_side {
+    height: 90%;
+    width: 15%;
+  }
+  
+  .category_style,
+  .product_style {
+    background-color:aquamarine;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: "Courier New", Courier, monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    width: 100%;
+    height: 20%;
+  }
+  
+  .category_style:hover,
+  .product_style:hover {
+    background-color: rgb(12, 213, 146);
+  }
+  
+  .category_style:active,
+  .product_style:active {
+    background-color: aquamarine;
+  }
+  
+  .products_list {
+    width: 60%;
+    height: 89.5%;
+  }
+  
+  .information_block {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 25%;
+    height: 60%;
+  }
+  
+  .text_style {
+    font-size: 30px;
+    font-family: "Courier New", Courier, monospace;
+  }
+  
+  .buyButton {
+    margin-top: 10px;
+    cursor: pointer;
+    width: 300px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: rgb(15, 224, 15);
+    border: 1px solid green;
+  }
+  
+  .buyButton:hover {
+    background-color: rgb(15, 200, 15);
+  }
+  
+  .buyButton:active {
+    background-color: rgb(15, 224, 15);
+  }
+  
+  footer {
+    width: 100%;
+    height: 35%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .purchase_information {
+    background-color:rgb(88, 179, 179);
+    border-radius: 10px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .user_about,
+  .user_location,
+  .user_purchase,
+  .user_comment,
+  .user_submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 20%;
+  }
+  
+  .user_about_style,
+  .user_location_style,
+  .user_purchase_style {
+    border: none;
+    text-align: center;
+    width: 250px;
+    height: 30px;
+    border-radius: 7px;
+  }
+  
+  .user_comment_style {
+    border: none;
+    text-align: center;
+    width: 77%;
+    height: 95%;
+  }
+  
+  .user_submit_button {
+    cursor: pointer;
+    width: 300px;
+    height: 35px;
+    border-radius: 7px;
+    background-color: rgb(15, 224, 15);
+    border: 1px solid green;
+  }
+  
+  .user_submit_button:hover {
+    background-color: rgb(15, 200, 15);
+  }
+
+  .orders_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25%;
+  }
+
+  .orders_button {
+    cursor: pointer;
+    width: 300px;
+    height: 35px;
+    background-color: rgb(255, 166, 0);
+    border: 1px solid rgb(173, 117, 12);
+  }
+
+  .orders_button:hover {
+    background-color: rgb(224, 150, 13);
+  }
+
+  .orders_button:active{
+    background-color: rgb(255, 166, 0);
+  }
+
+  .order {
+    margin:10px;
+    width: 300px;
+    height: 70px;
+    border-radius: 20px;
+    padding:20px;
+    border:2px dashed black;
+    font-size:25px;
+    font-family: arial;
+  }
+
+  .detailsBtn,
+  .deleteBtn{
+    margin:5px;
+    cursor: pointer;
+    width: 70px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: red;
+    border: none;
+  }
+
+  .detailsBtn:hover,
+  .deleteBtn:hover{
+    background-color: rgb(206, 8, 8);
+  }
+
+  .orderDetails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    font-size: 25px;
+    margin:10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px dashed black;
+  }

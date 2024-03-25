@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HW 30</title>
+    <title>HW 31</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    
+    <div id="container" class="container">
+    <header>
+      <div class="category_side" id="category_side"></div>
+      <div class="products_list" id="products_list"></div>
+      <div class="information_block" id="information_block"></div>
+      <button class="orders_button" id="myOrdersBtn">My Orders</button>
+    </header>
+    <footer id="footer">
+      <form id="form" class="purchase_information">
+        <div class="user_about">
+          <input id="user_name" class="user_about_style" type="text" placeholder="Enter your name">
+          <input id="user_surname" class="user_about_style" type="text" placeholder="Enter your surname">
+        </div>
+        <div class="user_location">
+          <select class="user_location_style" id="user_select">
+            <option disabled selected>Select a city</option>
+            <option value="donbas">Donbas</option>
+            <option value="odesa">Odesa</option>
+            <option value="kyiv">Kyiv</option>
+            <option value="kharkiv">Kharkiv</option>
+            <option value="dnipro">Dnipro</option>
+          </select>
+          <input id="user_department" class="user_location_style" type="text" placeholder="Department">
+        </div>
+        <div class="user_purchase">
+          <select class="user_purchase_style" id="user_purchase">
+            <option disabled selected>Choose your payment method</option>
+            <option value="cash on delivery">Cash on delivery</option>
+            <option value="bank card">Bank card payment</option>
+          </select>
+          <input id="user_amount" class="user_purchase_style" type="text" placeholder="Enter amount of products">
+        </div>
+        <div class="user_comment">
+          <textarea class="user_comment_style" id="user_comment" placeholder="Comment on the order"></textarea>
+        </div>
+        <div class="user_submit">
+          <button id="submit_button" class="user_submit_button">Submit</button>
+        </div>
+      </form>
+    </footer>
+    <div class="orders_info">
+   
+    </div>
+  </div>
+
     <script src="./js/main.js"></script>
 </body>
 </html>
