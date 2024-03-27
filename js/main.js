@@ -1,52 +1,52 @@
 class Person {
-    constructor(name,gender){
+    constructor(name,age){
         this.name = name;
-        this.gender = gender;
+        this.age = age;
+    }
+
+    personInfo(){
+        console.log(`${this.name} ${this.age}`);
     }
 }
 
-class Apartment {
-    residents = [];
-
-    addResident(person){
-        this.residents.push(person);
-    }
-}
-
-class House {
-    apartments = [];
-    maxApartmentNumber;
-
-    constructor(maxApartmentNumber){
-        this.maxApartmentNumber = maxApartmentNumber;
+class Car {
+    constructor(mark,model,year,lisencePlate){
+        this.mark = mark;
+        this.model = model;
+        this.year = year;
+        this.lisencePlate = lisencePlate;
+        this.owner = null;
     }
 
-    addApartment(apartment){
-        if(this.apartments.length < this.maxApartmentNumber){
-            this.apartments.push(apartment);
+    assignOwner(person){
+        if(person.age > 18){
+            this.owner = person;
+        }
+    }
+
+    carInfo(){
+        console.log(`Car : ${this.mark} ${this.model} ${this.year} ${this.lisencePlate}`)
+        if(this.owner){
+            console.log(`Owner Information:`);
+            this.owner.personInfo();
         }else {
-            console.log('The maximum number of apartments in the building has already been reached.')
+            console.log(`No owner assigned yet.`);
         }
     }
 }
 
+const person1 = new Person('Daniel',22);
+const person2 = new Person('Julia',19);
+const person3 = new Person('Mike',17);
 
-const person1 = new Person('Daniel','Male');
-const person2 = new Person('Jessica','Female');
-const person3 = new Person('Ann','Female');
+const bmw_car = new Car('BMW','M5 F90',2024,'THEKILLER');
+const mercedes_car = new Car('Mercedes','S class 550',2022,7777);
+const porsche_car = new Car('Porsche','Taycan','2019',8979);
 
-const apartment1 = new Apartment();
-const apartment2 = new Apartment();
-const apartment3 = new Apartment();
+bmw_car.assignOwner(person1);
+mercedes_car.assignOwner(person2);
+porsche_car.assignOwner(person3);
 
-apartment1.addResident(person1);
-apartment2.addResident(person2);
-apartment3.addResident(person3);
-
-const house = new House(3);
-
-house.addApartment(apartment1);
-house.addApartment(apartment2);
-house.addApartment(apartment3);
-
-console.log(house.apartments);
+bmw_car.carInfo();
+mercedes_car.carInfo();
+porsche_car.carInfo();
